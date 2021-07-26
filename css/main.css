@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  background-image: url("../images/bg-intro-desktop.png");
+  background-color: #ff7a7a;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10vw;
+  color: white;
+}
+
+main .text-content {
+  width: 40vw;
+  padding-right: 2rem;
+}
+
+main .text-content h1 {
+  margin-top: 0;
+  font-size: 300%;
+}
+
+main .form {
+  width: 40vw;
+  padding: 0 2rem;
+}
+
+main .form .trial {
+  text-align: center;
+  background-color: #6055a5;
+  padding: 0.5rem 0;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 5px 2px rgba(62, 60, 73, 0.5);
+          box-shadow: 0 5px 2px rgba(62, 60, 73, 0.5);
+}
+
+main .form .trial span {
+  font-weight: 600;
+}
+
+main .form form {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 2rem 0;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 5px 2px rgba(62, 60, 73, 0.5);
+          box-shadow: 0 5px 2px rgba(62, 60, 73, 0.5);
+}
+
+main .form form input,
+main .form form button {
+  width: 80%;
+  padding: 0.8rem 1rem;
+  margin: 0.5rem 0;
+  border-radius: 4px;
+  border: 1px solid gray;
+}
+
+main .form form button:hover {
+  cursor: pointer;
+  background-color: #61d6a3;
+}
+
+main .form form input {
+  background-repeat: no-repeat;
+  background-position: top 50% right 5%;
+  color: black;
+}
+
+main .form form input:focus {
+  outline: none;
+}
+
+main .form form .error-msg {
+  color: #ff7a7a;
+  font-size: 60%;
+  width: 80%;
+  margin: 0;
+  text-align: right;
+  visibility: hidden;
+}
+
+main .form form .hide-error-icon {
+  background-image: none;
+  border: 1px solid gray;
+  color: black;
+}
+
+main .form form .hide-error-msg {
+  visibility: hidden;
+}
+
+main .form form .show-error-icon {
+  background-image: url("../images/icon-error.svg");
+  border: 1px solid #ff7a7a;
+}
+
+main .form form .show-error-msg {
+  visibility: visible;
+}
+
+main .form form button {
+  color: white;
+  background-color: #38cc8c;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+main .form form .tnc {
+  color: #b9b6d3;
+  font-size: 50%;
+  margin-top: 0;
+}
+
+main .form form .tnc span {
+  color: #ff7a7a;
+  font-weight: 600;
+}
+
+@media (min-width: 851px) and (max-width: 1100px) {
+  main {
+    padding: 0;
+  }
+  main .text-content {
+    width: 50vw;
+  }
+  main .text-content h1 {
+    font-size: 250%;
+  }
+  main .form {
+    width: 40vw;
+    padding: 0;
+  }
+  main .form form {
+    padding: 1rem 0;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 850px) {
+  main {
+    height: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background-image: url("../images/bg-intro-mobile.png");
+  }
+  main .text-content {
+    width: 100%;
+    margin-top: 5rem;
+    padding: 0;
+    text-align: center;
+  }
+  main .text-content h1 {
+    font-size: 300%;
+  }
+  main .text-content p {
+    font-size: 110%;
+  }
+  main .form {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 5rem;
+  }
+  main .form .trial {
+    padding: 1rem 3rem;
+    font-size: 90%;
+    margin-bottom: 2rem;
+  }
+  main .form form .tnc {
+    font-size: 65%;
+    padding: 0 2rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    height: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background-image: url("../images/bg-intro-mobile.png");
+  }
+  main .text-content {
+    width: 100%;
+    margin-top: 5rem;
+    padding: 0;
+    text-align: center;
+  }
+  main .text-content h1 {
+    font-size: 200%;
+  }
+  main .text-content p {
+    font-size: 95%;
+  }
+  main .form {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 5rem;
+  }
+  main .form .trial {
+    padding: 0.5rem 3rem;
+    font-size: 90%;
+  }
+  main .form form .tnc {
+    font-size: 65%;
+    padding: 0 2rem;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=main.css.map */
